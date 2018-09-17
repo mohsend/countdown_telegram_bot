@@ -1,4 +1,4 @@
-import telegram, logging, redis, random
+import telegram, logging, random
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackQueryHandler
 
@@ -38,9 +38,6 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
                     level=logging.INFO)
 
 logger = logging.getLogger(__name__)
-
-# Connect to redis
-r = redis.Redis(host='localhost', port=6379, db=0)
 
 def error(bot, update, error):
     """Log Errors caused by Updates."""

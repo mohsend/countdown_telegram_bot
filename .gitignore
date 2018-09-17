@@ -6,3 +6,4 @@ pyvenv.cfg/**
 share/**
 lib64
 token.txt
+pyvenv.cfg
